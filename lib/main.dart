@@ -82,7 +82,10 @@ class _MyHomePageState extends State<MyHomePage> {
   //METHOD TO ADD NEW TRANSACTION
   void _addNewTransaction(String txTitle, double txAmount, DateTime txTime) {
     final newTx = Transaction(
-        id: txTime.day, value: txAmount, name: txTitle, time: txTime);
+        id: txTime.day + txTime.millisecond,
+        value: txAmount,
+        name: txTitle,
+        time: txTime);
 
     setState(() {
       _userTransactions.add(newTx);
@@ -169,7 +172,9 @@ class _MyHomePageState extends State<MyHomePage> {
             // CHART CARD
             SizedBox(
               height: actualHeight * 0.35,
-              child: Chart(recentTransactions: _recentTransactions),
+              child: Chart(
+                  recentTransactions: _recentTransactions,
+                  userTransactions: _userTransactions),
             ),
             // TRANSACTIONS LIST CARD
             SizedBox(
