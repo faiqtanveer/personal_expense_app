@@ -36,47 +36,47 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   //LIST OF TRANSACTIONS [Added Few Dummy Transactions]
   final List<Transaction> _userTransactions = [
-    Transaction(id: 1, value: 100.00, name: 'Cookies', time: DateTime.now()),
-    Transaction(
-        id: 2,
-        value: 1230.00,
-        name: 'Bournvita',
-        time: DateTime.now().subtract(const Duration(days: 3))),
-    Transaction(
-        id: 3,
-        value: 140.00,
-        name: 'Biryani',
-        time: DateTime.now().subtract(const Duration(days: 5))),
-    Transaction(
-        id: 4,
-        value: 130.00,
-        name: 'Pants',
-        time: DateTime.now().subtract(const Duration(days: 2))),
-    Transaction(
-        id: 5,
-        value: 500.00,
-        name: 'Battery',
-        time: DateTime.now().subtract(const Duration(days: 6))),
-    Transaction(
-        id: 6,
-        value: 50.00,
-        name: 'Cable',
-        time: DateTime.now().subtract(const Duration(days: 1))),
-    Transaction(
-        id: 7,
-        value: 400.00,
-        name: 'Hotstar',
-        time: DateTime.now().subtract(const Duration(days: 4))),
-    Transaction(
-        id: 8,
-        value: 900.00,
-        name: 'Jio Recharge',
-        time: DateTime.now().subtract(const Duration(days: 3))),
-    Transaction(
-        id: 9,
-        value: 440.00,
-        name: 'Wifi Recharge',
-        time: DateTime.now().subtract(const Duration(days: 5))),
+    // Transaction(id: 1, value: 100.00, name: 'Cookies', time: DateTime.now()),
+    // Transaction(
+    //     id: 2,
+    //     value: 1230.00,
+    //     name: 'Bournvita',
+    //     time: DateTime.now().subtract(const Duration(days: 3))),
+    // Transaction(
+    //     id: 3,
+    //     value: 140.00,
+    //     name: 'Biryani',
+    //     time: DateTime.now().subtract(const Duration(days: 5))),
+    // Transaction(
+    //     id: 4,
+    //     value: 130.00,
+    //     name: 'Pants',
+    //     time: DateTime.now().subtract(const Duration(days: 2))),
+    // Transaction(
+    //     id: 5,
+    //     value: 500.00,
+    //     name: 'Battery',
+    //     time: DateTime.now().subtract(const Duration(days: 6))),
+    // Transaction(
+    //     id: 6,
+    //     value: 50.00,
+    //     name: 'Cable',
+    //     time: DateTime.now().subtract(const Duration(days: 1))),
+    // Transaction(
+    //     id: 7,
+    //     value: 400.00,
+    //     name: 'Hotstar',
+    //     time: DateTime.now().subtract(const Duration(days: 4))),
+    // Transaction(
+    //     id: 8,
+    //     value: 900.00,
+    //     name: 'Jio Recharge',
+    //     time: DateTime.now().subtract(const Duration(days: 3))),
+    // Transaction(
+    //     id: 9,
+    //     value: 440.00,
+    //     name: 'Wifi Recharge',
+    //     time: DateTime.now().subtract(const Duration(days: 5))),
   ];
 
   //METHOD TO ADD NEW TRANSACTION
